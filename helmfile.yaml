@@ -1,0 +1,14 @@
+repositories:
+  - name: jycamier
+    url: ghcr.io/jycamier/renovate-helmfile-oci-reproduction-app
+    oci: true
+  - name: jenkins
+    url: https://charts.jenkins.io
+
+releases:
+  - name: app-test
+    chart: jycamier/oci-chart-test
+    version: 0.1.0
+  - name: jenkins
+    chart: jenkins/jenkins
+    version: 3.3.0
