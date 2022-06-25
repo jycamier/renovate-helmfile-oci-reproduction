@@ -11,7 +11,7 @@
     },
     {
       "matchDatasources": ["helm"],
-      "versioning": "semver"
+      "versioning": "regex:^v?(?<major>\\d+).(?<minor>\\d+)(?<patch>.\\d+)?$"
     }
   ]
 }
