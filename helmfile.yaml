@@ -1,9 +1,15 @@
+helmBinary: helm3
+
 repositories:
   - name: jycamier
     url: ghcr.io/jycamier/renovate-helmfile-oci-reproduction-app
     oci: true
   - name: jenkins
     url: https://charts.jenkins.io
+  - name: eks-charts
+    url: https://aws.github.io/eks-charts
+  - name: jetstack
+    url: https://charts.jetstack.io
 
 releases:
   - name: app-test
@@ -12,3 +18,13 @@ releases:
   - name: jenkins
     chart: jenkins/jenkins
     version: 3.3.0
+  - name: aws-load-balancer-controller
+    chart: eks-charts/aws-load-balancer-controller
+    version: 1.4.1
+    set:
+      - name: clusterName
+        value: my-cluster
+  - name: cert-manager
+    chart: jetstack/cert-manager
+    version: 1.5.3
+
