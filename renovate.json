@@ -11,7 +11,7 @@
     },
     {
       "matchDatasources": ["helm"],
-      "versioning": "semver-coerced"
+      "versioning": "semver"
     }
   ]
 }
