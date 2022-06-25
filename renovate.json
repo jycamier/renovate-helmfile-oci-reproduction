@@ -1,5 +1,17 @@
 {
   "extends": [
     "config:base"
+  ],
+  "packageRules": [
+    {
+      "matchDatasources": ["docker"],
+      "commitMessagePrefix": "chore(docker/renovate): ",
+      "matchManagers": ["dockerfile"],
+      "addLabels": ["docker"]
+    },
+    {
+      "matchDatasources": ["helm"],
+      "versioning": "semver-coerced"
+    }
   ]
 }
