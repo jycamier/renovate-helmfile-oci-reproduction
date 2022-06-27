@@ -8,10 +8,6 @@
       "commitMessagePrefix": "chore(docker/renovate): ",
       "matchManagers": ["dockerfile"],
       "addLabels": ["docker"]
-    },
-    {
-      "matchDatasources": ["helm"],
-      "versioning": "regex:^v?(?<major>\\d+).(?<minor>\\d+)(?<patch>.\\d+)?$"
     }
   ]
 }
