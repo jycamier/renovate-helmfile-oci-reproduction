@@ -17,7 +17,7 @@ releases:
     version: 0.1.0
   - name: jenkins
     chart: jenkins/jenkins
-    version: 3.3.0
+    version: 3.12.2
   - name: aws-load-balancer-controller
     chart: eks-charts/aws-load-balancer-controller
     version: 1.4.1
