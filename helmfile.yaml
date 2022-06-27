@@ -26,5 +26,5 @@ releases:
         value: my-cluster
   - name: cert-manager
     chart: jetstack/cert-manager
-    version: 1.5.3
+    version: v1.8.2
 
