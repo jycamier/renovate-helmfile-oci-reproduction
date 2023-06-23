@@ -14,7 +14,7 @@ repositories:
 releases:
   - name: app-test
     chart: jycamier/oci-chart-test
-    version: 0.1.0
+    version: 1.0.0
   - name: jenkins
     chart: jenkins/jenkins
     version: 3.3.0
